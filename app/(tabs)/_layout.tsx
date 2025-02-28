@@ -64,7 +64,7 @@ function TabLayout() {
             <Tabs.Screen
                 name="index"
                 options={{
-                    headerTitle: "Warexpert",
+                    headerTitle: "Warexpert Package Tracking",
                     title: "Home",
                     tabBarIcon: ({ focused, color }) => (
                         <View style={focused ? styles.activeIconContainer : null}>
