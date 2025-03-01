@@ -60,7 +60,6 @@ function TabLayout() {
                 headerShadowVisible: false,
             })}
         >
-            {/* Home Tab */}
             <Tabs.Screen
                 name="index"
                 options={{
@@ -78,11 +77,10 @@ function TabLayout() {
                 }}
             />
 
-            {/* Payment Tab */}
             <Tabs.Screen
                 name="payment"
                 options={{
-                    headerTitle: "Payment",
+                    headerTitle: "Payment Section",
                     title: "Payment",
                     tabBarIcon: ({ focused, color }) => (
                         <View style={focused ? styles.activeIconContainer : null}>
@@ -96,7 +94,6 @@ function TabLayout() {
                 }}
             />
 
-            {/* Notifications Tab */}
             <Tabs.Screen
                 name="notification"
                 options={{
@@ -120,7 +117,6 @@ function TabLayout() {
                 }}
             />
 
-            {/* Contact Tab */}
             <Tabs.Screen
                 name="contact"
                 options={{

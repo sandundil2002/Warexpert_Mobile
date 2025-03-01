@@ -10,7 +10,7 @@ export interface Notification {
     id: string;
     message: string;
     type: "info" | "success" | "error";
-    timestamp?: string; // Optional timestamp for sorting
+    timestamp?: string;
 }
 
 interface NotificationState {
@@ -41,9 +41,6 @@ const notificationSlice = createSlice({
             state.notifications = state.notifications.filter(
                 notification => notification.id !== action.payload
             );
-        },
-        clearNotifications: (state) => {
-            state.notifications = [];
         }
     },
     extraReducers: (builder) => {
@@ -63,5 +60,5 @@ const notificationSlice = createSlice({
     },
 });
 
-export const { removeNotification, clearNotifications } = notificationSlice.actions;
+export const { removeNotification } = notificationSlice.actions;
 export default notificationSlice.reducer;
