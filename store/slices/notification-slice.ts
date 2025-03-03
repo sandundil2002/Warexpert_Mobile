@@ -2,7 +2,7 @@ import { createAsyncThunk, createSlice, PayloadAction } from "@reduxjs/toolkit";
 import axios from "axios";
 
 const api = axios.create({
-    baseURL: "http://192.168.8.143:3000",
+    baseURL: "http://192.168.237.105:3000",
     withCredentials: true,
 });
 
